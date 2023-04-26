@@ -12,13 +12,14 @@ code {
     monospace;
 }
 
-nav {
+.nav--main {
     display: flex;
     align-items: auto;
-    background-color: rgb(244, 98, 0);
+    background-color: rgb(148, 79, 150);
     padding: 16px 32px;
     margin-bottom: 20px;
 }
+
 
 nav a {
   margin-right: 16px;
@@ -28,3 +29,74 @@ nav a.active {
   text-decoration: none;
   font-weight: bold;
 }
+
+.nav--main a {
+  color:white;
+}
+
+.nav--main a:hover{
+  color: rgb(138, 233, 245);
+}
+.nav--main a:active,
+.nav--main a.active {
+  color:rgb(255, 255, 255);
+}
+
+.nav--services {
+  display: flex;
+  align-items: auto;
+  position: relative;
+  background-color: rgb(243, 228, 245);
+  padding: 10px 42px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.search--services {
+  margin-left: 40px;
+
+}
+
+.title--home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: rgb(1, 12, 13);
+  margin-left: 20px;
+  font-size:x-large;
+  font-weight: bold;
+}
+
+/* BUTTONS */
+
+.btn--home-book,
+.btn--go-back-booking
+ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 70%;
+    color: #fff;
+    margin: 20px;
+    border: none; 
+    border-radius: 10px; 
+    padding: 15px;
+    min-height:30px; 
+    min-width: 120px;
+    background-color: rgb(137, 75, 145);
+    box-shadow: 2px 2px 2px 0px rgb(77, 22, 78);
+    font-weight: bold;
+  }
+  .btn--home-book:hover,
+  .btn--go-back-booking:hover {
+      outline-color: transparent;
+      outline-style:solid;
+      box-shadow: 1px 1px 5px 4px #5db3c3;
+      
+}
+
+
