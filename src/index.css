@@ -12,26 +12,34 @@ code {
     monospace;
 }
 
+/* HERO */
+
+.nav--links{
+  display: flex;
+  align-items: auto;
+  background-color: none;
+  margin-bottom: 20px;
+}
 .nav--main {
     display: flex;
     align-items: auto;
-    background-color: rgb(148, 79, 150);
-    padding: 16px 32px;
+    position: relative;
+    background-color: none;
     margin-bottom: 20px;
 }
 
-
 nav a {
-  margin-right: 16px;
+  margin-right: 25px;
 }
 
 nav a.active {
-  text-decoration: none;
+
   font-weight: bold;
 }
 
 .nav--main a {
-  color:white;
+  color:rgb(0, 0, 0);
+  text-decoration: none;
 }
 
 .nav--main a:hover{
@@ -39,9 +47,20 @@ nav a.active {
 }
 .nav--main a:active,
 .nav--main a.active {
-  color:rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
 }
 
+.hero {
+  display: flex;
+  background-image: url("./components/assets/images/hero.png");
+  background-repeat: no-repeat !important;
+  padding: 15%;
+  background-size: cover;
+  margin-bottom: 35px;
+}
+
+
+/* SERVICES */
 .nav--services {
   display: flex;
   align-items: auto;
@@ -60,6 +79,7 @@ nav a.active {
 }
 
 .title--home {
+  top: 50%;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -6,7 +6,7 @@ export const Home = () => {
   return (
     <>
     <div>
-      <p className='title--home'>MAKEUP BY JOVY</p>
+      <p className='title--home'>Atlanta Wedding Hair and Makeup</p>
     </div>
     <button onClick={() => navigate('booking-summary', { replace: true })} className='btn--home-book'>
       Book Now

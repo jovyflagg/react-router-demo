@@ -7,17 +7,20 @@ import { BookingSummary } from './components/BookingSummary';
 import { NoMatch } from './components/NoMatch';
 import { Services } from './components/Services';
 
+
 function App() {
   return (
     <>
-     <Navbar />
+      <div className="hero">
+        <Navbar />
+      </div>
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='about' element={<About />} />
-        <Route path='booking-summary' element={<BookingSummary />} />
-        <Route path='services' element={<Services />} />
-        <Route path="*" element={<NoMatch />} />
-      </Routes>
+          <Route path='/react-router-demo' element={<Home />} />
+          <Route path='about' element={<About />} />
+          <Route path='booking-summary' element={<BookingSummary />} />
+          <Route path='services' element={<Services />} />
+          <Route path="*" element={<NoMatch />} />
+        </Routes>
     </>
   );
 }
