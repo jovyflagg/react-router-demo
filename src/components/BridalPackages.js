@@ -1,7 +1,10 @@
 import React from 'react'
 
+
 export const BridalPackages = () => {
   return (
-    <div>BridalPackages</div>
+    <div>BridalPackages
+      
+    </div>
   )
 }
