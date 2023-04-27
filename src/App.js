@@ -14,9 +14,7 @@ const LazyAbout = React.lazy(() => import('./components/About'));
 function App() {
   return (
     <>
-      <div className="hero">
-        <Navbar />
-      </div>
+      <Navbar />
       <Routes>
           <Route path='/' element={<Home />} />
           <Route path='about' element={

@@ -13,18 +13,19 @@ code {
 }
 
   /************************************************************/
- /*                           HERO                           */
+ /*                          NAV                             */
 /************************************************************/
 
 
 .nav--main {
     display: flex;
     align-items: auto;
-    justify-content: center;
-    position: absolute;
+    justify-content: right;
+    position: relative;
     background-color: none;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 30px;
+    background-color: whitesmoke;
 }
 
 nav a {
@@ -42,20 +43,11 @@ nav a.active {
 }
 
 .nav--main a:hover{
-  color: rgb(138, 233, 245);
+  color: rgb(207, 117, 219);
 }
 .nav--main a:active,
 .nav--main a.active {
   color:rgb(0, 0, 0);
-}
-
-.hero {
-  display: flex;
-  background-image: url("./components/assets/images/hero.png");
-  background-repeat: no-repeat !important;
-  padding: 15%;
-  background-size: cover;
-  margin-bottom: 35px;
 }
 
   /************************************************************/
@@ -66,7 +58,7 @@ nav a.active {
   display: flex;
   align-items: auto;
   position: relative;
-  background-color: rgb(243, 228, 245);
+  background-color: whitesmoke;
   padding: 10px 42px;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -92,7 +84,7 @@ nav a.active {
   color: rgb(1, 12, 13);
   margin-left: 20px;
   font-size:x-large;
-  font-weight: bold;
+  
 }
 
   /************************************************************/
