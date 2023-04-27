@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
+
 
 export const Services = () => {
     return (
@@ -12,9 +13,10 @@ export const Services = () => {
                 />
             </div>
             <nav className='nav--services'>
-                <Link>Bridal Packages</Link>
-                <Link>Individual Service</Link>
+                <Link to='bridal-packages' >Bride</Link>
+                <Link to='wedding-party-packages'>Wedding Party</Link>
             </nav>
+            <Outlet />
         </>
     )
 }

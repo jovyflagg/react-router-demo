@@ -6,6 +6,8 @@ import { Navbar } from './components/Navbar';
 import { BookingSummary } from './components/BookingSummary';
 import { NoMatch } from './components/NoMatch';
 import { Services } from './components/Services';
+import { BridalPackages } from './components/BridalPackages';
+import { WeddingPartyPackages } from './components/WeddingPartyPackages';
 
 
 function App() {
@@ -15,10 +17,15 @@ function App() {
         <Navbar />
       </div>
       <Routes>
-          <Route path='/react-router-demo' element={<Home />} />
+          <Route path='/' element={<Home />} />
           <Route path='about' element={<About />} />
           <Route path='booking-summary' element={<BookingSummary />} />
-          <Route path='services' element={<Services />} />
+          <Route path='booking-summary' element={<BookingSummary />} />
+          <Route path='services' element={<Services />}> 
+            <Route index element={<BridalPackages />} />
+            <Route path='bridal-packages' element={<BridalPackages />} />
+            <Route path='wedding-party-packages' element={<WeddingPartyPackages />} />
+          </Route>
           <Route path="*" element={<NoMatch />} />
         </Routes>
     </>

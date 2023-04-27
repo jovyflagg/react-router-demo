@@ -12,20 +12,19 @@ code {
     monospace;
 }
 
-/* HERO */
+  /************************************************************/
+ /*                           HERO                           */
+/************************************************************/
 
-.nav--links{
-  display: flex;
-  align-items: auto;
-  background-color: none;
-  margin-bottom: 20px;
-}
+
 .nav--main {
     display: flex;
     align-items: auto;
-    position: relative;
+    justify-content: center;
+    position: absolute;
     background-color: none;
     margin-bottom: 20px;
+    padding: 20px;
 }
 
 nav a {
@@ -59,8 +58,10 @@ nav a.active {
   margin-bottom: 35px;
 }
 
+  /************************************************************/
+ /*                         SERVICES                         */
+/************************************************************/
 
-/* SERVICES */
 .nav--services {
   display: flex;
   align-items: auto;
@@ -72,6 +73,10 @@ nav a.active {
   margin-left: 40px;
   margin-right: 40px;
 }
+
+/* TO DO:
+      -Highlight or bold active service
+*/
 
 .search--services {
   margin-left: 40px;
@@ -90,8 +95,9 @@ nav a.active {
   font-weight: bold;
 }
 
-/* BUTTONS */
-
+  /************************************************************/
+ /*                         BUTTONS                          */
+/************************************************************/
 .btn--home-book,
 .btn--go-back-booking
  {
